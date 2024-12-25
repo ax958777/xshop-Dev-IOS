@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		99013A2E2D1C7ADD001CE79A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 99013A2D2D1C7ADD001CE79A /* Kingfisher */; };
+		99CAE5032D19E1A000583E1F /* Readme.Md in Resources */ = {isa = PBXBuildFile; fileRef = 99CAE5022D19E19100583E1F /* Readme.Md */; };
+		99CAE5062D19E21F00583E1F /* Model3DView in Frameworks */ = {isa = PBXBuildFile; productRef = 99CAE5052D19E21F00583E1F /* Model3DView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		99BBF72F2D01214700E02598 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,7 @@
 		99BBF71E2D01213E00E02598 /* xshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BBF72E2D01214700E02598 /* xshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BBF7382D01214700E02598 /* xshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CAE5022D19E19100583E1F /* Readme.Md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.Md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99013A2E2D1C7ADD001CE79A /* Kingfisher in Frameworks */,
+				99CAE5062D19E21F00583E1F /* Model3DView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99013A2C2D1C7ADD001CE79A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99BBF7152D01213E00E02598 = {
 			isa = PBXGroup;
 			children = (
+				99CAE5022D19E19100583E1F /* Readme.Md */,
 				99BBF7202D01213E00E02598 /* xshop */,
 				99BBF7312D01214700E02598 /* xshopTests */,
 				99BBF73B2D01214700E02598 /* xshopUITests */,
+				99013A2C2D1C7ADD001CE79A /* Frameworks */,
 				99BBF71F2D01213E00E02598 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +130,8 @@
 			);
 			name = xshop;
 			packageProductDependencies = (
+				99CAE5052D19E21F00583E1F /* Model3DView */,
+				99013A2D2D1C7ADD001CE79A /* Kingfisher */,
 			);
 			productName = xshop;
 			productReference = 99BBF71E2D01213E00E02598 /* xshop.app */;
@@ -186,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 99BBF7192D01213E00E02598 /* Build configuration list for PBXProject "xshop" */;
+			buildConfigurationList = 99BBF7192D01213E00E02598 /* Build configuration list for PBXProject "xshop-DEV" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,6 +215,10 @@
 			);
 			mainGroup = 99BBF7152D01213E00E02598;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				99CAE5042D19E21F00583E1F /* XCRemoteSwiftPackageReference "Model3DView" */,
+				990139D72D1C7A22001CE79A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 99BBF71F2D01213E00E02598 /* Products */;
 			projectDirPath = "";
@@ -212,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CAE5032D19E1A000583E1F /* Readme.Md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		99BBF7192D01213E00E02598 /* Build configuration list for PBXProject "xshop" */ = {
+		99BBF7192D01213E00E02598 /* Build configuration list for PBXProject "xshop-DEV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99BBF7402D01214700E02598 /* Debug */,
@@ -558,6 +583,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		990139D72D1C7A22001CE79A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+		99CAE5042D19E21F00583E1F /* XCRemoteSwiftPackageReference "Model3DView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/Model3DView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99013A2D2D1C7ADD001CE79A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 990139D72D1C7A22001CE79A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		99CAE5052D19E21F00583E1F /* Model3DView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99CAE5042D19E21F00583E1F /* XCRemoteSwiftPackageReference "Model3DView" */;
+			productName = Model3DView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99BBF7162D01213E00E02598 /* Project object */;
 }
